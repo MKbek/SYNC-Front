@@ -1,0 +1,215 @@
+@import url("./tailwind.css");
+
+* {
+    @apply scroll-smooth;
+}
+
+body, #app-preloader {
+    background-color: #DDDDDD;
+    min-height: 100vh;
+}
+
+.bg-primary {
+    background-color: #007FFF;
+}
+
+.bg-burger {
+    background-color: #D4D4D4;
+}
+
+.bg-card {
+    background-color: #FFFFFF;
+}
+
+.text-primary {
+    color: #007FFF;
+    -webkit-text-fill-color: #007FFF;
+}
+
+.bg-primary-opacity-3 {
+    background-color: rgba(0, 127, 255, 0.3);
+}
+
+#ssp-main {
+    background: #FFF;
+    border: 2px solid #007FFF;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0, 127, 255, 0.1),
+                0 0 100px rgb(0, 127, 255, 0.5),
+                0 0 150px rgb(0, 127, 255 , 1);
+}
+
+.app-logo {
+    box-shadow: 0 0 80px 20px rgba(0, 127, 255, 0.5);
+}
+
+input {
+    @apply outline-0
+}
+
+input[type=submit] {
+    background: #007FFF;
+}
+
+input:focus {
+    border-color: #007FFF;
+    /*box-shadow: 0 0 0 3px rgba(255, 29, 94, 0.4);*/
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.3s;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
+.bottom-sheet-enter-active,
+.bottom-sheet-leave-active {
+    transition: opacity 0.3s;
+}
+
+.bottom-sheet-enter-from,
+.bottom-sheet-leave-to {
+    opacity: 0;
+    @apply -bottom-96
+}
+
+.fade-top-enter-active,
+.fade-top-leave-active,
+.fade-left-enter-active,
+.fade-left-leave-active,
+.fade-right-enter-active,
+.fade-right-leave-active,
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-top-enter-from,
+.fade-top-leave-to {
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+.fade-left-enter-from,
+.fade-left-leave-to {
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+.fade-right-enter-from,
+.fade-right-leave-to {
+    opacity: 0;
+    transform: translateX(10%);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.moveUp-enter-active {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.moveUp-leave-active {
+    animation: moveUp 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-400px); }
+}
+
+header {
+    line-height: 1.5;
+    max-height: 100vh;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+nav {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+nav a.router-link-exact-active {
+    color: var(--color-text);
+}
+
+nav a.router-link-exact-active:hover {
+    background-color: transparent;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0 1rem;
+    border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+    border: 0;
+}
+
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        place-items: center;
+        padding-right: calc(var(--section-gap) / 2);
+    }
+
+    .logo {
+        margin: 0 2rem 0 0;
+    }
+
+    header .wrapper {
+        display: flex;
+        place-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        text-align: left;
+        margin-left: -1rem;
+        font-size: 1rem;
+
+        padding: 1rem 0;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+::-webkit-input-placeholder {
+    @apply text-zinc-600/50 !important
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #DDD;
+    border-left: 1px solid #DDD;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007FFF;
+    border: 3px solid #DDD;
+    border-radius: 20px;
+}
