@@ -1,0 +1,57 @@
+{
+  "src/assets/logo.svg": {
+    "file": "assets/logo-c1a6a0f4.svg",
+    "src": "src/assets/logo.svg"
+  },
+  "src/main.css": {
+    "file": "assets/main-3c70c435.css",
+    "src": "src/main.css"
+  },
+  "src/main.js": {
+    "css": [
+      "assets/main-3c70c435.css"
+    ],
+    "dynamicImports": [
+      "src/views/Home.vue",
+      "src/views/Login.vue",
+      "src/views/Scan.vue"
+    ],
+    "file": "assets/main-79cda9ec.js",
+    "isEntry": true,
+    "src": "src/main.js"
+  },
+  "src/views/Home.vue": {
+    "file": "assets/Home-38270821.js",
+    "imports": [
+      "src/main.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/Home.vue"
+  },
+  "src/views/Login.vue": {
+    "assets": [
+      "assets/logo-c1a6a0f4.svg"
+    ],
+    "file": "assets/Login-d1458f7d.js",
+    "imports": [
+      "src/main.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/Login.vue"
+  },
+  "src/views/Scan.css": {
+    "file": "assets/Scan-0f0470a2.css",
+    "src": "src/views/Scan.css"
+  },
+  "src/views/Scan.vue": {
+    "css": [
+      "assets/Scan-0f0470a2.css"
+    ],
+    "file": "assets/Scan-3a2df510.js",
+    "imports": [
+      "src/main.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/Scan.vue"
+  }
+}
